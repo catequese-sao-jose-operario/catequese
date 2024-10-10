@@ -6,67 +6,136 @@
     <title>Formação Catequética - São José Operário</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f3efe5;
-            color: #4e4a41;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
             margin: 0;
             padding: 0;
+            line-height: 1.6;
         }
+
         header {
-            background-color: #8c7b6b;
-            padding: 20px;
-            text-align: center;
+            background-color: #4a4a8d;
             color: #fff;
+            padding: 30px 0;
+            text-align: center;
         }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
         nav {
-            background-color: #d4c8b2;
-            padding: 15px;
-            display: flex;
-            justify-content: space-around;
+            background-color: #3d3d7a;
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
         }
+
         nav a {
-            color: #4e4a41;
+            color: #fff;
             text-decoration: none;
             font-weight: bold;
+            margin: 0 15px;
+            font-size: 1.1em;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease;
         }
+
         nav a:hover {
-            text-decoration: underline;
+            background-color: #5c5c9d;
+            border-radius: 5px;
         }
+
         main {
-            padding: 20px;
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
         }
-        h2 {
-            color: #8c7b6b;
+
+        main h2 {
+            font-size: 2em;
+            color: #4a4a8d;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
         }
+
         section {
-            margin-bottom: 40px;
+            margin-bottom: 60px;
         }
-        footer {
-            background-color: #8c7b6b;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-        .video-container, .document-container {
+
+        .video-container {
             margin-top: 20px;
         }
+
         .video-container iframe {
             width: 100%;
-            max-width: 600px;
-            height: 315px;
+            max-width: 800px;
+            height: 450px;
             border: none;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
         }
+
+        .document-container {
+            margin-top: 20px;
+        }
+
         .document-container a {
             display: block;
-            margin: 5px 0;
-            color: #4e4a41;
+            color: #4a4a8d;
             text-decoration: none;
+            font-weight: bold;
+            margin: 10px 0;
+            padding: 10px 15px;
+            border-radius: 5px;
+            background-color: #f5f5f5;
+            transition: background-color 0.3s ease;
         }
+
         .document-container a:hover {
-            text-decoration: underline;
+            background-color: #e0e0e0;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        ul li strong {
+            color: #333;
+        }
+
+        footer {
+            background-color: #4a4a8d;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 60px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Estilos responsivos */
+        @media (max-width: 768px) {
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .video-container iframe {
+                height: 250px;
+            }
         }
     </style>
 </head>
@@ -74,11 +143,13 @@
     <header>
         <h1>Formação Catequética - São José Operário</h1>
     </header>
+
     <nav>
         <a href="#videos-formacao">Vídeos de Formação</a>
         <a href="#documentos">Documentos</a>
         <a href="#conteudos-catequese">Conteúdos da Catequese</a>
     </nav>
+
     <main>
         <section id="videos-formacao">
             <h2>Vídeos de Formação</h2>
@@ -89,7 +160,6 @@
             <div class="video-container">
                 <iframe src="https://www.youtube.com/embed/EXEMPLO_VIDEO2" allowfullscreen></iframe>
             </div>
-            <!-- Adicione mais vídeos conforme necessário -->
         </section>
 
         <section id="documentos">
@@ -98,7 +168,6 @@
             <div class="document-container">
                 <a href="link_para_documento1.pdf" target="_blank">Documento de Formação 1</a>
                 <a href="link_para_documento2.pdf" target="_blank">Documento de Formação 2</a>
-                <!-- Adicione mais documentos conforme necessário -->
             </div>
         </section>
 
@@ -113,9 +182,9 @@
             <div class="video-container">
                 <iframe src="https://www.youtube.com/embed/EXEMPLO_VIDEO3" allowfullscreen></iframe>
             </div>
-            <!-- Adicione mais conteúdos conforme necessário -->
         </section>
     </main>
+
     <footer>
         <p>&copy; 2024 São José Operário - Paróquia. Todos os direitos reservados.</p>
     </footer>
