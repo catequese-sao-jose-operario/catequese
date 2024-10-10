@@ -6,54 +6,118 @@
     <title>Formação Catequética - São José Operário</title>
     <style>
         body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #f5f5f5;
-            color: #333;
+            font-family: Arial, sans-serif;
+            background-color: #f3efe5;
+            color: #4e4a41;
             margin: 0;
             padding: 0;
-            line-height: 1.6;
         }
-
         header {
-            background-color: #4a4a8d;
-            color: #fff;
-            padding: 30px 0;
+            background-color: #8c7b6b;
+            padding: 20px;
             text-align: center;
+            color: #fff;
         }
-
-        header h1 {
-            font-size: 2.5em;
-            margin: 0;
-        }
-
         nav {
-            background-color: #3d3d7a;
-            padding: 15px 0;
-            text-align: center;
-            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+            background-color: #d4c8b2;
+            padding: 15px;
+            display: flex;
+            justify-content: space-around;
         }
-
         nav a {
-            color: #fff;
+            color: #4e4a41;
             text-decoration: none;
             font-weight: bold;
-            margin: 0 15px;
-            font-size: 1.1em;
-            padding: 10px 20px;
-            transition: background-color 0.3s ease;
         }
-
         nav a:hover {
-            background-color: #5c5c9d;
-            border-radius: 5px;
+            text-decoration: underline;
         }
-
         main {
-            padding: 40px 20px;
-            max-width: 1200px;
-            margin: 0 auto;
+            padding: 20px;
         }
+        h2 {
+            color: #8c7b6b;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        footer {
+            background-color: #8c7b6b;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .video-container, .document-container {
+            margin-top: 20px;
+        }
+        .video-container iframe {
+            width: 100%;
+            max-width: 600px;
+            height: 315px;
+            border: none;
+        }
+        .document-container a {
+            display: block;
+            margin: 5px 0;
+            color: #4e4a41;
+            text-decoration: none;
+        }
+        .document-container a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Formação Catequética - São José Operário</h1>
+    </header>
+    <nav>
+        <a href="#videos-formacao">Vídeos de Formação</a>
+        <a href="#documentos">Documentos</a>
+        <a href="#conteudos-catequese">Conteúdos da Catequese</a>
+    </nav>
+    <main>
+        <section id="videos-formacao">
+            <h2>Vídeos de Formação</h2>
+            <p>Confira abaixo alguns vídeos que ajudarão no desenvolvimento do catequista:</p>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/EXEMPLO_VIDEO1" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/EXEMPLO_VIDEO2" allowfullscreen></iframe>
+            </div>
+            <!-- Adicione mais vídeos conforme necessário -->
+        </section>
 
-        main h2 {
-            font-size: 2em;
-            color
+        <section id="documentos">
+            <h2>Documentos</h2>
+            <p>Links para documentos importantes para as catequeses:</p>
+            <div class="document-container">
+                <a href="link_para_documento1.pdf" target="_blank">Documento de Formação 1</a>
+                <a href="link_para_documento2.pdf" target="_blank">Documento de Formação 2</a>
+                <!-- Adicione mais documentos conforme necessário -->
+            </div>
+        </section>
+
+        <section id="conteudos-catequese">
+            <h2>Conteúdos para a Catequese</h2>
+            <p>Sugestões de conteúdos e vídeos para o desenvolvimento nos pilares Ser, Saber e Saber Fazer:</p>
+            <ul>
+                <li><strong>Ser:</strong> Reflexões sobre a vida cristã e o papel do catequista.</li>
+                <li><strong>Saber:</strong> Conhecimentos doutrinários e bíblicos essenciais.</li>
+                <li><strong>Saber Fazer:</strong> Técnicas e práticas catequéticas.</li>
+            </ul>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/EXEMPLO_VIDEO3" allowfullscreen></iframe>
+            </div>
+            <!-- Adicione mais conteúdos conforme necessário -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 São José Operário - Paróquia. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
