@@ -56,4 +56,137 @@
 
         main h2 {
             font-size: 2em;
-            color
+            color: #4a4a8d;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+
+        section {
+            margin-bottom: 60px;
+        }
+
+        .video-container {
+            margin-top: 20px;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            max-width: 800px;
+            height: 450px;
+            border: none;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+        }
+
+        .document-container {
+            margin-top: 20px;
+        }
+
+        .document-container a {
+            display: block;
+            color: #4a4a8d;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 10px 0;
+            padding: 10px 15px;
+            border-radius: 5px;
+            background-color: #f5f5f5;
+            transition: background-color 0.3s ease;
+        }
+
+        .document-container a:hover {
+            background-color: #e0e0e0;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        ul li strong {
+            color: #333;
+        }
+
+        footer {
+            background-color: #4a4a8d;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 60px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Estilos responsivos */
+        @media (max-width: 768px) {
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .video-container iframe {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Formação Catequética - São José Operário</h1>
+    </header>
+
+    <nav>
+        <a href="#videos-formacao">Vídeos de Formação</a>
+        <a href="#documentos">Documentos</a>
+        <a href="#conteudos-catequese">Conteúdos da Catequese</a>
+    </nav>
+
+    <main>
+        <section id="videos-formacao">
+            <h2>Vídeos de Formação</h2>
+            <p>Confira abaixo alguns vídeos que ajudarão no desenvolvimento do catequista:</p>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/EXEMPLO_VIDEO1" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/EXEMPLO_VIDEO2" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section id="documentos">
+            <h2>Documentos</h2>
+            <p>Links para documentos importantes para as catequeses:</p>
+            <div class="document-container">
+                <a href="link_para_documento1.pdf" target="_blank">Documento de Formação 1</a>
+                <a href="link_para_documento2.pdf" target="_blank">Documento de Formação 2</a>
+            </div>
+        </section>
+
+        <section id="conteudos-catequese">
+            <h2>Conteúdos para a Catequese</h2>
+            <p>Sugestões de conteúdos e vídeos para o desenvolvimento nos pilares Ser, Saber e Saber Fazer:</p>
+            <ul>
+                <li><strong>Ser:</strong> Reflexões sobre a vida cristã e o papel do catequista.</li>
+                <li><strong>Saber:</strong> Conhecimentos doutrinários e bíblicos essenciais.</li>
+                <li><strong>Saber Fazer:</strong> Técnicas e práticas catequéticas.</li>
+            </ul>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/EXEMPLO_VIDEO3" allowfullscreen></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 São José Operário - Paróquia. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
